@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JusticeAI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/style/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+  </head>
+
+  <body class="body main-page">
+    <header class="header header_open">
+      <div class="container header__wrap">
+        <a class="logo" href="index.html">
+          <img
+            class="logo__icon"
+            src="assets/image/logo.svg"
+            alt="logo company"
+          />
+          <span class="logo__title">JusticeAI</span></a
+        >
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#about" class="header__item-link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="#features" class="header__item-link">Features</a>
+            </li>
+            <li class="header__item">
+              <a href="#pricing" class="header__item-link">pricing</a>
+            </li>
+            <li class="header__item">
+              <a href="#faq" class="header__item-link">faq</a>
+            </li>
+            <li class="header__item">
+              <a href="contact.html" class="header__item-link">Сontact us</a>
+            </li>
+          </ul>
+          <button class="header__btn" type="button">
+            <img class="open" src="assets/image/Burger-Menu.svg" alt="" />
+          </button>
+        </nav>
+        <ul class="app-wrap">
+          <li class="app-wrap__btn">
+            <a href="" class="header__btn-link"
+              ><img
+                src="assets/image/App-store.svg"
+                alt="download on the App Store"
+            /></a>
+          </li>
+          <li class="app-wrap__btn">
+            <a href="" class="header__btn-link"
+              ><img
+                src="assets/image/Google-play.svg"
+                alt="get it on Google Play"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-mobile">
+        <div class="header-mobile-top">
+          <a class="logo" href="index.html">
+            <img
+              class="logo__icon"
+              src="assets/image/logo.svg"
+              alt="logo company"
+            />
+            <span class="logo__title">JusticeAI</span></a
+          >
+          <button class="header__btn" type="button">
+            <img class="close" src="assets/image/close-header.svg" alt="" />
+          </button>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#about" class="header__item-link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="#features" class="header__item-link">Features</a>
+            </li>
+            <li class="header__item">
+              <a href="#pricing" class="header__item-link">pricing</a>
+            </li>
+            <li class="header__item">
+              <a href="#faq" class="header__item-link">faq</a>
+            </li>
+            <li class="header__item">
+              <a href="contact.html" class="header__item-link">Сontact us</a>
+            </li>
+          </ul>
+          <div class="user__btn-wrap">
+            <ul class="user__social-list">
+              <li class="user__social">
+                <a href="" class="user__social-link">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.55016 21.75C16.6045 21.75 21.5583 14.2467 21.5583 7.74186C21.5583 7.53092 21.5536 7.3153 21.5442 7.10436C22.5079 6.40746 23.3395 5.54425 24 4.5553C23.1025 4.9546 22.1496 5.21538 21.1739 5.32874C22.2013 4.71291 22.9705 3.74547 23.3391 2.60577C22.3726 3.17856 21.3156 3.58261 20.2134 3.80061C19.4708 3.01156 18.489 2.48912 17.4197 2.31405C16.3504 2.13899 15.2532 2.32105 14.2977 2.8321C13.3423 3.34314 12.5818 4.15471 12.1338 5.14131C11.6859 6.12792 11.5754 7.23462 11.8195 8.2903C9.86249 8.19209 7.94794 7.6837 6.19998 6.7981C4.45203 5.91249 2.90969 4.66944 1.67297 3.14952C1.0444 4.23324 0.852057 5.51565 1.13503 6.73609C1.418 7.95654 2.15506 9.02345 3.19641 9.71999C2.41463 9.69517 1.64998 9.48468 0.965625 9.10592V9.16686C0.964925 10.3041 1.3581 11.4066 2.07831 12.2868C2.79852 13.167 3.80132 13.7706 4.91625 13.995C4.19206 14.1931 3.43198 14.222 2.69484 14.0794C3.00945 15.0574 3.62157 15.9129 4.44577 16.5263C5.26997 17.1398 6.26512 17.4806 7.29234 17.5012C5.54842 18.8711 3.39417 19.6141 1.17656 19.6106C0.783287 19.61 0.390399 19.5859 0 19.5384C2.25286 20.9837 4.87353 21.7514 7.55016 21.75Z"
+                      fill="#98A2B3"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user__social">
+                <a href="" class="user__social-link">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z"
+                      fill="#98A2B3"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user__social">
+                <a href="" class="user__social-link">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1504_17996)">
+                      <path
+                        d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                        fill="#98A2B3"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1504_17996">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="app-wrap">
+              <li class="app-wrap__btn">
+                <a href="" class="header__btn-link"
+                  ><img
+                    src="assets/image/App-store.svg"
+                    alt="download on the App Store"
+                /></a>
+              </li>
+              <li class="app-wrap__btn">
+                <a href="" class="header__btn-link"
+                  ><img
+                    src="assets/image/Google-play.svg"
+                    alt="get it on Google Play"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <img class="mobile-bg" src="assets/image/mobile-Shape.png" alt="" />
+      </div>
+    </header>
+    <main class="main">
+      <div id="app-wrapper"></div>
+      <section class="main-banner">
+        <div class="container main-banner__wrap">
+          <div class="main-banner__content">
+            <h1 class="main-title">
+              Empower Your Legal Journey with JusticeAI -
+            </h1>
+            <p class="main-banner__sub-title">
+              Your Personal AI Legal Assistant
+            </p>
+            <div class="main-banner__img main-banner__img_mobile">
+              <img
+                src="assets/image/flying-cross-iphone-x-mockup-template.png"
+                alt="two phone pictures"
+              />
+            </div>
+            <p class="main-banner__text">
+              Welcome to JusticeAI, where cutting-edge AI technology meets the
+              realm of law.
+            </p>
+            <p class="main-banner__text">
+              We bring you the ultimate
+              <span class="main-banner__text_bold">legal assistant 24/7</span>.
+            </p>
+            <p class="main-banner__text">
+              Say goodbye to legal complexities and hello to seamless solutions.
+              JusticeAI is your go-to guide, whether you're an ordinary
+              individual, a sharp-witted law student, or a seasoned legal pro.
+            </p>
+            <a href="#about" class="btn">Learn more</a>
+            <ul class="app-wrap">
+              <li class="app-wrap__btn">
+                <a href="" class="header__btn-link"
+                  ><img
+                    src="assets/image/App-store.svg"
+                    alt="download on the App Store"
+                /></a>
+              </li>
+              <li class="app-wrap__btn">
+                <a href="contact.html" class="header__btn-link"
+                  ><img
+                    src="assets/image/Google-play.svg"
+                    alt="get it on Google Play"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-banner__img">
+            <img
+              class="img-tel"
+              src="assets/image/flying-cross-iphone-x-mockup-template.png"
+              alt="two phone pictures"
+            />
+            <div class="robot">
+              <img class="robot-img" src="assets/image/robot.svg" alt="" />
+              <img class="robot-arm" src="assets/image/arm.svg" alt="" />
+              <img class="robot-text" src="assets/image/hello.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <img class="img-right" src="assets/image/Shape-right.png" alt="" />
+        <img class="img-left" src="assets/image/Shape-left.png" alt="" />
+      </section>
+      <section id="about" class="our-case our-case_divorce">
+        <h2 class="main-title main-title_small">DIVORCE</h2>
+        <div class="container our-case__wrap">
+          <div class="wrapper">
+            <img class="divorce-bg" src="assets/image/divorce-bg.png" alt="" />
+            <div class="our-case__item our-case__item_first">
+              <div class="our-case__message">
+                <div class="first-user">
+                  What's the process of getting a divorce?
+                </div>
+                <div class="second-user">
+                  The divorce process varies based on jurisdiction, but it
+                  generally begins with filing a petition. It's essential to
+                  consult local laws or an attorney for specifics.
+                </div>
+              </div>
+              <a class="our-case__wrap-field" href="#app-wrapper">
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+              <a
+                class="our-case__wrap-field our-case__wrap-field_mobile"
+                href="#app-wrapper-footer"
+              >
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+            </div>
+            <div class="our-case__item our-case__item_second">
+              <div class="our-case__message">
+                <div class="first-user">
+                  I need advice on navigating a divorce.
+                </div>
+                <div
+                  class="second-user"
+                  data-message="Of course, I can help. What specific aspects are you concerned
+                  about?."
+                ></div>
+              </div>
+              <a href="#app-wrapper" class="our-case__wrap-field">
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+              <a
+                class="our-case__wrap-field our-case__wrap-field_mobile"
+                href="#app-wrapper-footer"
+              >
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="our-case__main-img">
+            <img src="assets/image/our-case1.png" alt="family on the sofa" />
+          </div>
+        </div>
+      </section>
+      <section class="our-case our-case_accident our-case_img-left">
+        <div class="container our-case__wrapper">
+          <h2 class="main-title main-title_small">Car Accidents</h2>
+          <div class="our-case__wrap">
+            <div class="our-case__main-img">
+              <img src="assets/image/our-case2.png" alt="broken car" />
+            </div>
+            <div class="wrapper">
+              <div class="our-case__item our-case__item_first">
+                <div class="our-case__message">
+                  <div class="first-user">
+                    I had a car accident. What should I do first?
+                  </div>
+                  <div class="second-user">
+                    Ensure everyone's safety, call the authorities, gather
+                    evidence, exchange info with involved parties, and consider
+                    seeking legal advice if needed.
+                  </div>
+                </div>
+                <a href="#app-wrapper" class="our-case__wrap-field">
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+                <a
+                  class="our-case__wrap-field our-case__wrap-field_mobile"
+                  href="#app-wrapper-footer"
+                >
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+              </div>
+              <div class="our-case__item our-case__item_second">
+                <div class="our-case__message">
+                  <div class="first-user">
+                    I was in a car accident. How do I handle insurance claims?
+                  </div>
+                  <div class="second-user">
+                    I'm here to guide you through the steps to file an insurance
+                    claim and seek compensation.
+                  </div>
+                </div>
+                <a href="#app-wrapper" class="our-case__wrap-field">
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+                <a
+                  class="our-case__wrap-field our-case__wrap-field_mobile"
+                  href="#app-wrapper-footer"
+                >
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="pricing">
+        <h2 class="main-title">Embrace the Future of Legal Support!</h2>
+        <p class="pricing__sub-title">
+          Choose a subscription that fits your needs and unlock a world of legal
+          information.
+        </p>
+        <div class="container pricing__wrap">
+          <ul class="pricing__list">
+            <li class="pricing__list-item">
+              <h3 class="pricing__item-title">19,99 $</h3>
+              <p class="pricing__item-term">Monthly</p>
+              <p class="pricing__item-description">Auto-renewable</p>
+              <a href="contact.html" class="btn">ВUY</a>
+            </li>
+            <li class="pricing__list-item pricing__list-item_best">
+              <div class="pricing__special-offer">Best offer</div>
+              <h3 class="pricing__item-title">29.99 $</h3>
+              <p class="pricing__item-term">2 months</p>
+              <p class="pricing__item-description">Auto-renewable</p>
+              <a href="contact.html" class="btn">ВUY</a>
+            </li>
+            <li class="pricing__list-item">
+              <h3 class="pricing__item-title">99,99 $</h3>
+              <p class="pricing__item-term">Yearly</p>
+              <p class="pricing__item-description">Auto-renewable</p>
+              <a href="contact.html" class="btn">ВUY</a>
+            </li>
+          </ul>
+          <p class="pricing__description">
+            For B2B clients looking to harness the power of JusticeAI for their
+            organizations, we offer tailored solutions to meet your unique
+            needs. Contact us directly at [email@example.com] to get a custom
+            quote and discover how JusticeAI can revolutionize your legal
+            support.
+          </p>
+          <a href="contact.html" class="btn">GET A quote</a>
+        </div>
+        <img
+          class="img-right"
+          src="assets/image/pricing-shape-right.png"
+          alt=""
+        />
+        <img class="img-left" src="assets/image/Shape-left.png" alt="" />
+      </section>
+      <section id="features" class="features">
+        <div class="container features__wrap">
+          <h2 class="main-title">Our features:</h2>
+          <div class="features__list-wrap">
+            <ul class="features__list">
+              <li class="features__list-item">
+                <span class="features__item-title">Always Available:</span>
+                <span class="features__item-description"
+                  >JusticeAI is here to assist you 24/7.</span
+                >
+                <span class="list-item-check"></span>
+              </li>
+              <li class="features__list-item">
+                <span class="features__item-title">History Storage:</span>
+                <span class="features__item-description"
+                  >Store your question history for easy access</span
+                >
+                <span class="list-item-check"></span>
+              </li>
+              <li class="features__list-item">
+                <span class="features__item-title">All in One:</span>
+                <span class="features__item-description"
+                  >Get information on diverse legal issues in one place.</span
+                >
+                <span class="list-item-check"></span>
+              </li>
+            </ul>
+            <ul class="features__list">
+              <li class="features__list-item">
+                <span class="features__item-title">Confidentiality:</span>
+                <span class="features__item-description"
+                  >Your personal data and query history are secure with
+                  us.</span
+                >
+                <span class="list-item-check"></span>
+              </li>
+              <li class="features__list-item">
+                <span class="features__item-title">Cost Savings:</span>
+                <span class="features__item-description"
+                  >Pay a fraction of the cost of real-life legal
+                  consultations.</span
+                >
+                <span class="list-item-check"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="our-case our-case_disputes">
+        <h2 class="main-title main-title_small">Tenant-Landlord Disputes</h2>
+        <div class="container our-case__wrap">
+          <div class="wrapper">
+            <img class="divorce-bg" src="assets/image/divorce-bg.png" alt="" />
+            <div class="our-case__item our-case__item_first">
+              <div class="our-case__message">
+                <div class="first-user">
+                   I'm having issues with my landlord. What can I do?
+                </div>
+                <div class="second-user">
+                  Tenant-landlord disputes are common. Let's explore your rights
+                  and ways to address the situation.
+                </div>
+              </div>
+              <a href="#app-wrapper" class="our-case__wrap-field">
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+              <a
+                class="our-case__wrap-field our-case__wrap-field_mobile"
+                href="#app-wrapper-footer"
+              >
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+            </div>
+            <div class="our-case__item our-case__item_second">
+              <div class="our-case__message">
+                <div class="first-user">
+                  My landlord isn't fixing a major leak. What can I do?
+                </div>
+                <div class="second-user">
+                  Document the damage and your communication attempts. Depending
+                  on your jurisdiction, you may withhold rent or fix and deduct,
+                  but always check local laws first.
+                </div>
+              </div>
+              <a href="#app-wrapper" class="our-case__wrap-field">
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+              <a
+                class="our-case__wrap-field our-case__wrap-field_mobile"
+                href="#app-wrapper-footer"
+              >
+                <div class="field"></div>
+                <img src="assets/image/our-case-send.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="our-case__main-img">
+            <img src="assets/image/our-case3.png" alt="family on the sofa" />
+          </div>
+        </div>
+      </section>
+      <section class="our-case our-case_injury our-case_img-left">
+        <div class="container our-case__wrapper">
+          <h2 class="main-title main-title_small">Personal Injury</h2>
+          <div class="our-case__wrap">
+            <div class="our-case__main-img">
+              <img src="assets/image/our-case4.png" alt="broken car" />
+            </div>
+            <div class="wrapper">
+              <div class="our-case__item our-case__item_first">
+                <div class="our-case__message">
+                  <div class="first-user">
+                    I slipped at a store and injured my leg. Can I claim
+                    compensation?
+                  </div>
+                  <div class="second-user">
+                    If the store's negligence caused your injury, you might be
+                    eligible for compensation. It's advisable to document the
+                    incident and consult a personal injury lawyer.
+                  </div>
+                </div>
+                <a href="#app-wrapper" class="our-case__wrap-field">
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+                <a
+                  class="our-case__wrap-field our-case__wrap-field_mobile"
+                  href="#app-wrapper-footer"
+                >
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+              </div>
+              <div class="our-case__item our-case__item_second">
+                <div class="our-case__message">
+                  <div class="first-user">
+                    I got injured due to someone's negligence. Can I claim
+                    compensation?
+                  </div>
+                  <div class="second-user">
+                    I'm here to guide you through the steps to file an insurance
+                    claim and seek compensation.
+                  </div>
+                </div>
+                <a href="#app-wrapper" class="our-case__wrap-field">
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+                <a
+                  class="our-case__wrap-field our-case__wrap-field_mobile"
+                  href="#app-wrapper-footer"
+                >
+                  <div class="field"></div>
+                  <img src="assets/image/our-case-send.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="faq">
+        <div class="container faq__wrap">
+          <h2 class="main-title">Frequently asked questions</h2>
+          <div class="faq__wrapper">
+            <ul class="faq__list">
+              <li class="faq__list-item">
+                <h3 class="faq__item-title">What is JusticeAI?</h3>
+                <p class="faq__item-description">
+                  JusticeAI is for anyone who needs legal advice - from
+                  individuals to law students to professional lawyers.
+                </p>
+              </li>
+              <li class="faq__list-item">
+                <h3 class="faq__item-title">Who is JusticeAI for?</h3>
+                <p class="faq__item-description">
+                  JusticeAI is for anyone who needs legal advice - from
+                  individuals to law students to professional lawyers.
+                </p>
+              </li>
+              <li class="faq__list-item">
+                <h3 class="faq__item-title">How to start using JusticeAI?</h3>
+                <p class="faq__item-description">
+                  JusticeAI is for anyone who needs legal advice - from
+                  individuals to law students to professional lawyers.
+                </p>
+              </li>
+              <li class="faq__list-item">
+                <h3 class="faq__item-title">Is AI going to replace lawyers?</h3>
+                <p class="faq__item-description">
+                  JusticeAI is for anyone who needs legal advice - from
+                  individuals to law students to professional lawyers.
+                </p>
+              </li>
+            </ul>
+            <div class="faq__icon">
+              <div class="robot">
+                <img class="robot-img" src="assets/image/robot.svg" alt="" />
+                <img class="robot-arm" src="assets/image/arm.svg" alt="" />
+                <img class="robot-text" src="assets/image/hello.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__wrap">
+        <div class="footer__top">
+          <a class="logo" href="index.html">
+            <img
+              class="logo__icon"
+              src="assets/image/logo.svg"
+              alt="logo company"
+            />
+            <div class="logo__wrap">
+              <span class="logo__title">JusticeAI</span>
+              <span class="logo__sub-title">Legal Assistant</span>
+            </div>
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">Product</li>
+              <li class="footer__item">
+                <a href="" class="footer__link">About app</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">information</li>
+              <li class="footer__item">
+                <a href="#faq" class="footer__link">faq</a>
+              </li>
+              <li class="footer__item">
+                <a href="#about" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#pricing" class="footer__link">pricing</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">company</li>
+              <li class="footer__item">
+                <a href="contact.html" class="footer__link">Сontact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#features" class="footer__link">Features</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="app-wrapper-footer"></div>
+          <div class="user__btn-wrap">
+            <ul class="user__social-list">
+              <li class="user__social">
+                <a href="" class="user__social-link">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.55016 21.75C16.6045 21.75 21.5583 14.2467 21.5583 7.74186C21.5583 7.53092 21.5536 7.3153 21.5442 7.10436C22.5079 6.40746 23.3395 5.54425 24 4.5553C23.1025 4.9546 22.1496 5.21538 21.1739 5.32874C22.2013 4.71291 22.9705 3.74547 23.3391 2.60577C22.3726 3.17856 21.3156 3.58261 20.2134 3.80061C19.4708 3.01156 18.489 2.48912 17.4197 2.31405C16.3504 2.13899 15.2532 2.32105 14.2977 2.8321C13.3423 3.34314 12.5818 4.15471 12.1338 5.14131C11.6859 6.12792 11.5754 7.23462 11.8195 8.2903C9.86249 8.19209 7.94794 7.6837 6.19998 6.7981C4.45203 5.91249 2.90969 4.66944 1.67297 3.14952C1.0444 4.23324 0.852057 5.51565 1.13503 6.73609C1.418 7.95654 2.15506 9.02345 3.19641 9.71999C2.41463 9.69517 1.64998 9.48468 0.965625 9.10592V9.16686C0.964925 10.3041 1.3581 11.4066 2.07831 12.2868C2.79852 13.167 3.80132 13.7706 4.91625 13.995C4.19206 14.1931 3.43198 14.222 2.69484 14.0794C3.00945 15.0574 3.62157 15.9129 4.44577 16.5263C5.26997 17.1398 6.26512 17.4806 7.29234 17.5012C5.54842 18.8711 3.39417 19.6141 1.17656 19.6106C0.783287 19.61 0.390399 19.5859 0 19.5384C2.25286 20.9837 4.87353 21.7514 7.55016 21.75Z"
+                      fill="#98A2B3"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user__social">
+                <a href="" class="user__social-link">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z"
+                      fill="#98A2B3"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user__social">
+                <a href="" class="user__social-link">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1504_17996)">
+                      <path
+                        d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                        fill="#98A2B3"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1504_17996">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="app-wrap">
+              <li class="app-wrap__btn">
+                <a href="" class="header__btn-link"
+                  ><img
+                    src="assets/image/App-store.svg"
+                    alt="download on the App Store"
+                /></a>
+              </li>
+              <li class="app-wrap__btn">
+                <a href="" class="header__btn-link"
+                  ><img
+                    src="assets/image/Google-play.svg"
+                    alt="get it on Google Play"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>&#169; 2023 AI App Law | All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

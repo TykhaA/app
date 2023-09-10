@@ -1,0 +1,106 @@
+.robot {
+  position: absolute;
+  right: 0;
+  bottom: 16%;
+  // transform: scale(0.7);
+
+  &-img {
+    z-index: 1;
+    position: relative;
+  }
+
+  &-arm {
+    transform: rotate(-55deg);
+    position: absolute;
+    left: -9px;
+    top: 94px;
+    z-index: 0;
+    transform-origin: center right;
+    animation: arm 10s linear infinite;
+  }
+
+  &-text {
+    opacity: 0;
+    transform: scale(0.6);
+    position: absolute;
+    left: -75px;
+    top: -10px;
+    animation: text 10s linear infinite;
+  }
+
+  @keyframes arm {
+    5% {
+      transform: rotate(-55deg);
+    }
+
+    15% {
+      transform: rotate(-5deg);
+    }
+
+    25% {
+      transform: rotate(-55deg);
+    }
+
+    35% {
+      transform: rotate(-5deg);
+    }
+
+    45% {
+      transform: rotate(-55deg);
+    }
+
+    55% {
+      transform: rotate(-55deg);
+    }
+
+    65% {
+      transform: rotate(-55deg);
+    }
+
+    75% {
+      transform: rotate(-5deg);
+    }
+
+    85% {
+      transform: rotate(-55deg);
+    }
+
+    95% {
+      transform: rotate(-5deg);
+    }
+  }
+
+  @keyframes text {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    45% {
+      opacity: 1;
+      transform: scale(0.8);
+    }
+
+    55% {
+      opacity: 1;
+      transform: scale(0.8);
+    }
+
+    62% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    75% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    80% {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,185 @@
+$corpColor: #22A2A6;
+$accentColor:#158EA0;
+$textPrimary:#475467;
+$textLigth:#5D6C71;
+$darktext:#475467;
+$primaryBg: #F9FAFC;
+$corpBg:#EEFDFF;
+$accentCorpBg:rgba(85, 194, 197, 0.11);
+
+$btnColor:linear-gradient(180deg, #36DBCE 0%, #15808F 100%);
+$hoverbtn:linear-gradient(180deg, #15808F 0%, #36DBCE 100%);
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+}
+
+// reset style
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button,
+input {
+    font-family: inherit;
+    color: currentColor;
+    outline: none;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    background: #FFF;
+    font-size: 18px;
+    color: $textPrimary;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+section .container,
+.header .container,
+.footer .container {
+    margin: auto;
+
+    @media screen and (max-width: 1500px) {
+        max-width: 1360px;
+    }
+
+    @media screen and (max-width: 1360px) {
+        max-width: 1023px;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: 100%;
+    }
+}
+
+// logo style
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-family: 'Chivo', sans-serif;
+
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        font-size: 33.6px;
+        color: $darktext;
+    }
+
+    &__title {
+        color: $textPrimary;
+        font-size: 20px;
+    }
+
+    &__sub-title {
+        font-size: 13px;
+        color: #7893B1;
+        margin-top: 10px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+}
+
+// app btn
+.app-wrap {
+    display: flex;
+    column-gap: 11px;
+}
+
+.main-title {
+    font-size: 60px;
+    font-weight: 900;
+    color: $corpColor;
+    font-family: 'Chivo', sans-serif;
+
+
+    @media screen and (max-width: 1500px) {
+        font-size: 52px;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &_small {
+        font-size: 40px;
+        font-family: 'IBMP', sans-serif;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 500px) {
+            font-size: 24px;
+        }
+    }
+}
+
+// btn
+.btn {
+    display: block;
+    width: 327px;
+    padding: 14px 10px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 39.621px;
+    line-height: normal;
+    color: #fff;
+    background: $btnColor;
+    text-align: center;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    cursor: pointer;
+    font-family: 'Chivo', sans-serif;
+    height: 48px;
+
+    @media screen and (max-width: 500px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
+
+    &:hover {
+        border: 1px solid #FFF;
+        box-shadow: 0px 15.848201751708984px 39.620506286621094px 0px rgba(70, 196, 191, 0.28);
+        background: $hoverbtn;
+    }
+}

@@ -1,0 +1,141 @@
+.customer-support {
+    position: relative;
+    overflow: hidden;
+
+    &__wrap {
+        padding: 175px 0 171px;
+        position: relative;
+
+        @media screen and (max-width: 1370px) {
+            padding: 145px 0 191px;
+        }
+
+        @media screen and (max-width: 760px) {
+            padding: 80px 0 80px;
+        }
+
+        @media screen and (max-width: 760px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        max-width: 668px;
+        margin: 0 auto;
+    }
+
+    .main-title {
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 31px;
+        color: $textLigth;
+        font-family: 'Chivo', sans-serif;
+        font-size: 24px;
+        text-align: center;
+
+        @media screen and (max-width: 800px) {
+            max-width: 80%;
+            margin: 30px auto;
+            color: #A1A1AA;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 12px;
+            margin: 12px auto;
+        }
+    }
+
+    .img-right,
+    .img-left {
+        position: absolute;
+        top: 50%;
+        @include translate(0, -50%);
+        z-index: -1;
+    }
+
+    .img-right {
+        right: 0;
+
+        @media screen and (max-width: 1500px) {
+            width: 400px;
+        }
+
+        @media screen and (max-width: 1360px) {
+            top: 58%
+        }
+
+        @media screen and (max-width: 1050px) {
+            top: 90%
+        }
+
+        @media screen and (max-width: 500px) {
+            right: -25%;
+            top: 83%
+        }
+    }
+
+    .img-left {
+        left: 0;
+
+        @media screen and (max-width: 1500px) {
+            width: 320px;
+        }
+
+        @media screen and (max-width: 1250px) {
+            top: 30%
+        }
+
+        @media screen and (max-width: 1050px) {
+            top: 20%
+        }
+
+        @media screen and (max-width: 500px) {
+            left: -30%;
+        }
+    }
+
+    .robot {
+        right: 14%;
+        z-index: 1;
+
+        @media screen and (max-width: 1500px) {
+            bottom: 28%;
+        }
+
+        @media screen and (max-width: 1370px) {
+            bottom: 2%;
+        }
+
+        @media screen and (max-width: 760px) {
+            position: relative;
+            right: unset;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .robot-img {
+            @media screen and (max-width: 760px) {
+                height: 239px;
+            }
+        }
+
+        .robot-arm {
+            @media screen and (max-width: 760px) {
+                scale: 1.2;
+                left: -6px;
+                top: 141px;
+            }
+        }
+
+        .robot-text {
+            @media screen and (max-width: 500px) {
+                scale: 1.1;
+            }
+        }
+    }
+}
