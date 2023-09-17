@@ -136,7 +136,7 @@
 }
 
 .header-mobile {
-    position: absolute;
+    position: fixed;
     border-radius: 0px 0px 40px 40px;
     background: #FFF;
     height: fit-content;
@@ -145,6 +145,8 @@
     display: flex;
     flex-direction: column;
     z-index: 3;
+    overflow: auto;
+    height: 100vh;
     top: -100%;
     transform: translateY(-100%);
     transition: all 0.5s;
