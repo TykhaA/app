@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Pricing</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -71,7 +71,7 @@
                         <a href="index.html#features" class="header__item-link">Features</a>
                     </li>
                     <li class="header__item">
-                        <a href="pricing.html" class="header__item-link">pricing</a>
+                        <a href="index.htmlpricing.html" class="header__item-link">pricing</a>
                     </li>
                     <li class="header__item">
                         <a href="index.html#faq" class="header__item-link">faq</a>
@@ -136,77 +136,59 @@
         </div>
     </header>
     <main class="main">
-        <section class="customer-support">
-            <div class="container customer-support__wrap">
-                <div class="customer-support__content">
-                    <h1 class="main-title">
-                        customer support
-                    </h1>
-                    <p class="customer-support__text">
-                        Our customer support team is here to assist you. If you have any inquiries about app
-                        functionality, we're here to provide the answers you need.
-                    </p>
-                </div>
-                <div class="robot">
-                    <img class="robot-img" src="assets/image/robot.svg" alt="">
-                    <img class="robot-arm" src="assets/image/arm.svg" alt="">
-                    <img class="robot-text" src="assets/image/hello.svg" alt="">
+        <section id="pricing" class="pricing">
+            <h1 class="main-title">Embrace the Future of Legal Support!</h1>
+            <p class="pricing__sub-title">
+                Choose a subscription that fits your needs and unlock a world of legal
+                information.
+            </p>
+            <div class="container pricing__wrap">
+                <ul class="pricing__list">
+                    <li class="pricing__list-item">
+                        <h3 class="pricing__item-title">19,99 $</h3>
+                        <p class="pricing__item-term">Monthly Plan</p>
+                        <p class="pricing__item-auto-renewable">Auto-renewable</p>
+                        <p class="pricing__item-description">Access the full power of
+                            JusticeAI for a month</p>
+                        <a href="contact.html" class="btn">ВUY</a>
+                    </li>
+                    <li class="pricing__list-item pricing__list-item_best">
+                        <div class="pricing__special-offer">Best offer</div>
+                        <h3 class="pricing__item-title">29.99 $</h3>
+                        <p class="pricing__item-term">2 months Plan</p>
+                        <p class="pricing__item-auto-renewable">Auto-renewable</p>
+                        <p class="pricing__item-description">Extended access for two
+                            months at a special rate</p>
+                        <a href="contact.html" class="btn">ВUY</a>
+                    </li>
+                    <li class="pricing__list-item">
+                        <h3 class="pricing__item-title">99,99 $</h3>
+                        <p class="pricing__item-term">Yearly Plan</p>
+                        <p class="pricing__item-auto-renewable">Auto-renewable</p>
+                        <p class="pricing__item-description">Yearly access to all
+                            features</p>
+                        <a href="contact.html" class="btn">ВUY</a>
+                    </li>
+                    <li class="pricing__list-item">
+                        <h3 class="pricing__item-title">Get a quote</h3>
+                        <p class="pricing__item-term">Business Plan</p>
+                        <p class="pricing__item-description">Tailored solutions for
+                            businesses</p>
+                        <a href="contact.html" class="btn">ВUY</a>
+                    </li>
+                </ul>
+                <div class="download-wrap">
+                    <div class="qr-code">
+                        <div class="qr-code__wrap"><img src="assets/image/qr-code.png" alt="qr-code Download the app to empower
+                        your legal journey"></div>
+                        <span class="qr-code__title">Download</span>
+
+                    </div>
+                    <a href="" class="btn"><span>Download the app to empower your legal journey</span> </a>
                 </div>
             </div>
-            <img class="img-right" src="assets/image/Shape-right-contact.png" alt="" />
-            <img class="img-left" src="assets/image/Shape-left-contact.png" alt="" />
-        </section>
-        <section class="contact">
-            <div class="container contact__wrap">
-                <div class="contact__img-block">
-                    <img src="assets/image/contact-img.png" alt="Call center operator">
-                    <div class="description">Your satisfaction is our priority, and we're dedicated to ensuring that
-                        your experience with <span class="accent">JusticeAI</span> is seamless and informative. Don't
-                        hesitate to reach out – we're
-                        here to help!</div>
-                    <p class="sub-title">
-                        Reach out to us at <a class="accent" href="mailto:SUPPORT@JUSTICEAI.IO">SUPPORT@JUSTICEAI.IO</a>
-                        and our team
-                        will
-                        promptly get back to you with the
-                        information you are seeking
-                    </p>
-                </div>
-                <form action="method" class="form">
-                    <h2 class="main-title">Contact us</h2>
-                    <div class="field">
-                        <label class="label" for="name">Name
-                        </label>
-                        <input class="input" id="name" type="text" placeholder="Full name">
-                    </div>
-                    <div class="field">
-                        <label class="label" for="email">E-mail
-                        </label>
-                        <input class="input" id="email" type="text" placeholder="Example@mail.com">
-                    </div>
-                    <p class="label field">Message</p>
-                    <div class="wrapper">
-                        <div class="field-wrap">
-                            <div class="field">
-                                <input class="input radio" id="financial" type="radio" name="radio">
-                                <label class="label-radio" for="financial">Financial</label>
-                            </div>
-                            <div class="field">
-                                <input class="input radio" id="law1" type="radio" name="radio" checked>
-                                <label class="label-radio" for="law1">Family Law 01</label>
-                            </div>
-                            <div class="field">
-                                <input class="input radio" id="accidentian" type="radio" name="radio">
-                                <label class="label-radio" for="accidentian">Accidentian</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="textarea" contenteditable="true"></div>
-                    </div>
-                    <button class="btn" type="submit">Contact now</button>
-                </form>
-            </div>
+            <img class="img-right" src="assets/image/pricing-shape-right.png" alt="" />
+            <img class="img-left" src="assets/image/Shape-left.png" alt="" />
         </section>
     </main>
     <footer class="footer">
@@ -235,7 +217,7 @@
                             <a href="index.html#about" class="footer__link">About</a>
                         </li>
                         <li class="footer__item">
-                            <a href="pricing.html" class="footer__link">pricing</a>
+                            <a href="index.htmlpricing.html" class="footer__link">pricing</a>
                         </li>
                     </ul>
                     <ul class="footer__list">

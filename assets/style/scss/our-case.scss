@@ -13,12 +13,11 @@
     }
 
     &__wrap {
-        max-width: 1166px;
-        padding: 0 12px;
-        margin: auto;
         position: relative;
         display: flex;
         justify-content: space-between;
+        max-width: 1166px;
+        margin: auto;
 
         @media screen and (max-width: 700px) {
             justify-content: space-around;
@@ -26,14 +25,16 @@
     }
 
     &__wrapper {
+        position: relative;
         max-width: 1166px;
         margin: auto;
-        position: relative;
     }
 
     .wrapper {
         position: relative;
         left: 0%;
+        max-width: 1166px;
+        padding: 0 12px;
 
         @media screen and (max-width: 1140px) {
             scale: 0.9;
@@ -324,6 +325,15 @@
             }
         }
 
+        .main-title {
+            text-align: left;
+            position: relative;
+            z-index: 1;
+
+            @media screen and (max-width: 1100px) {
+                text-align: center;
+            }
+        }
 
         .our-case__wrap {
             @media screen and (max-width: 360px) {

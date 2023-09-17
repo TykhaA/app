@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 24px;
+        padding: 0px 24px;
 
         @media screen and (max-width: 999px) {
             padding: 15px 24px;
@@ -48,6 +48,7 @@
 
         @media screen and (max-width: 999px) {
             display: none;
+            gap: 10px;
         }
     }
 
@@ -55,9 +56,25 @@
         display: flex;
     }
 
+    &__item-link {
+        display: block;
+        padding: 34px 0;
+
+        @media screen and (max-width: 999px) {
+            padding: 20px 0;
+        }
+    }
+
     .app-wrap {
         @media screen and (max-width: 999px) {
             display: none;
+        }
+
+        .header__btn-link {
+            img {
+                scale: 0.8;
+                width: 100%;
+            }
         }
     }
 
@@ -93,14 +110,24 @@
     &__btn-link {
         width: 102px;
         height: 30px;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
 
-        img {
+        @media screen and (max-width: 400px) {
             width: 100%;
-            height: auto;
-            display: block;
         }
 
+        &_app-store {
+            border: 1px solid #E4E4E4;
+            background: #FFF;
+        }
+
+        &_google {
+            border-radius: 8px;
+            background: #000;
+        }
     }
 
     .app-wrap {
@@ -118,17 +145,18 @@
     display: flex;
     flex-direction: column;
     z-index: 3;
-    top: 0;
+    top: -100%;
+    transform: translateY(-100%);
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
-    top: -1500%;
     overflow: hidden;
     filter: drop-shadow(0px 10.73708438873291px 40.264068603515625px rgba(33, 80, 81, 0.07));
 
     &_open {
+        transform: translateX(0);
         top: 0;
     }
 
@@ -181,16 +209,20 @@
     }
 
     .app-wrap .header__btn-link {
-        display: block;
-        width: 217px;
-        height: 66px;
+        width: 327px;
+        height: 74px;
 
         @media screen and (max-width: 500px) {
             gap: 15px;
         }
+
+        img {
+            width: auto;
+            scale: 1;
+        }
     }
 
     .user__btn-wrap .app-wrap {
-        gap: 10px;
+        gap: 30px;
     }
 }

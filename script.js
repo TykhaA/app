@@ -12,12 +12,28 @@ function isInView(element) {
     )
 }
 
+secondUser.forEach((el, index) => {
+    const elementParent = el.parentElement;
+    const elementAttr = el.hasAttribute('data-message');
+    const elementText = secondUser[index].querySelector('span');
+    const elementHeight = el.clientHeight;
+    const elementWidth = elementParent.clientWidth;
+
+    if (elementAttr && elementText) {
+        elementParent.style.width = elementWidth + 'px';
+        el.style.height = elementHeight + 'px';
+        el.dataset.message = elementText.innerHTML;
+        elementText.innerHTML = '';
+    }
+})
+
 window.addEventListener('scroll', () => {
-    secondUser.forEach(el => {
+    secondUser.forEach((el, index) => {
         if (isInView(el)) {
             const elementText = el.dataset.message;
-            if (elementText && el.innerHTML === '') {
-                wtiteText(elementText, el, 10)
+            const elementInner = secondUser[index].querySelector('span')
+            if (elementText && elementInner.innerHTML === '') {
+                wtiteText(elementText, elementInner, 8)
             }
         }
     })
@@ -61,14 +77,15 @@ faqItem.forEach((el, index) => {
         el.classList.toggle('faq__list-item_active');
     })
 })
+// preset message
 
-const fieldInput = document.querySelectorAll('.field input');
-const textarea = document.querySelector('.textarea');
+// const fieldInput = document.querySelectorAll('.field input');
+// const textarea = document.querySelector('.textarea');
 
-fieldInput.forEach(el => {
-    if (el.checked) textarea.innerHTML = el.value
-    el.addEventListener('click', () => textarea.innerHTML = el.value)
-})
+// fieldInput.forEach(el => {
+//     if (el.checked) textarea.innerHTML = el.value
+//     el.addEventListener('click', () => textarea.innerHTML = el.value)
+// })
 
 
 // smooth scroll

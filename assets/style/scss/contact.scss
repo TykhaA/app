@@ -58,6 +58,12 @@
     &__img-block {
         position: relative;
 
+        img {
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+
         .description {
             color: #000;
             font-size: 16px;
@@ -82,18 +88,44 @@
 
             @media screen and (max-width: 1050px) {
                 right: 11%;
-                bottom: 4%;
+                bottom: 26%;
             }
 
             @media screen and (max-width: 500px) {
                 font-size: 12px;
                 max-width: 276px;
                 right: 4%;
-                bottom: 2%;
+                bottom: 25%;
             }
 
             .accent {
                 color: #238998;
+            }
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #363636;
+            font-family: 'Inter', sans-serif;
+            margin: 23px 0 18px;
+            max-width: 470px;
+
+            @media screen and (max-width: 670px) {
+                padding: 0 24px;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 12px;
+                line-height: 1.54;
+                margin: 12px 0 16px;
+            }
+
+            @media screen and (max-width: 350px) {
+                padding: 0 12px;
+            }
+
+            .accent {
+                color: #2CBEBA;
             }
         }
     }
@@ -101,6 +133,7 @@
     .form {
         max-width: 647px;
         min-width: 647px;
+        margin-top: 18px;
 
         @media screen and (max-width: 1500px) {
             min-width: 500px;
@@ -133,28 +166,6 @@
             }
         }
 
-        .sub-title {
-            font-size: 22px;
-            line-height: 1.27;
-            color: #A1A1AA;
-            font-family: 'Inter', sans-serif;
-            margin: 23px 0 18px;
-
-            @media screen and (max-width: 670px) {
-                padding: 0 24px;
-            }
-
-            @media screen and (max-width: 500px) {
-                font-size: 12px;
-                line-height: 1.54;
-                margin: 12px 0 16px;
-            }
-
-            @media screen and (max-width: 350px) {
-                padding: 0 12px;
-            }
-        }
-
         .accent {
             font-weight: 700;
             text-decoration-line: underline;
@@ -176,7 +187,7 @@
 
         .field-wrap {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             margin-top: 18px;
             gap: 12px;
 
@@ -258,6 +269,7 @@
             display: block;
             text-align: center;
             font-size: 13px;
+            cursor: pointer;
         }
 
         .btn {
@@ -283,7 +295,6 @@
         .radio:checked+.label-radio {
             background: linear-gradient(180deg, #36DBCE 0%, #15808F 100%);
             color: #fff;
-
         }
 
         .textarea {
